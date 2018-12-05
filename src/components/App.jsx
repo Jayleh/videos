@@ -31,13 +31,17 @@ class App extends Component {
   render() {
     return (
       <div className='ui container'>
-        <SearchBar onFormSubmit={this.onTermSubmit} />
         <div className='ui grid'>
           <div className='ui row'>
-            <div className='eleven wide column'>
+            <div className='column'>
+              <SearchBar onFormSubmit={this.onTermSubmit} />
+            </div>
+          </div>
+          <div className='ui row'>
+            <div className='sixteen wide phone eleven wide computer column'>
               <VideoDetail video={this.state.selectedVideo} />
             </div>
-            <div className='five wide column'>
+            <div className='sixteen wide phone five wide computer column'>
               <VideoList
                 onVideoSelect={this.onVideoSelect}
                 videos={this.state.videos}
