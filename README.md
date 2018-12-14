@@ -1,8 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Vid Browser
 
 Browse for the first 5 YouTube videos based on your search!
+
+![png](documentation/images/hello.png)
 
 ## Technology Stack
 
